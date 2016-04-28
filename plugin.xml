@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin id="cordova-example-plugin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <name>Example Plugin</name>
+  <description>Cordova plugin to learn</description>
+  <license>MIT</license>
+  <keywords>cordova,example</keywords>
+  
+  <repo>https://github.com/yaoyao1992/cordova-example-plugin</repo>
+  <issue>https://github.com/yaoyao1992/cordova-example-plugin/issues</issue>
+ 
+  <platform name="android">
+	<config-file target="config.xml" parent="/*">
+	    <feature name="Echo">
+	        <param name="android-package" value="org.apache.cordova.plugin.Echo"/>
+	    </feature>
+	</config-file>
+  </platform>
+
+  <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Echo">
+                <param name="ios-package" value="Echo" />
+            </feature>
+        </config-file>
+  </platform>
+
+
+
+</plugin>
