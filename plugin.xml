@@ -9,7 +9,13 @@
   
   <repo>https://github.com/yaoyao1992/cordova-example-plugin</repo>
   <issue>https://github.com/yaoyao1992/cordova-example-plugin/issues</issue>
- 
+
+
+  <js-module src="www/echo.js" name="echo">
+        <clobbers target="echo" />
+  </js-module>
+
+
   <platform name="android">
 	<config-file target="config.xml" parent="/*">
 	    <feature name="Echo">

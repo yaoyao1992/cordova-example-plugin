@@ -1,5 +1,10 @@
-window.echo = function(str, callback) {
-    cordova.exec(callback, function(err) {
-        callback('Nothing to echo.');
-    }, "Echo", "echo", [str]);
-};
+var exec = require("cordova/exec");
+
+
+
+echoExport.getMessage=function(successCallback,errorCallback,options){
+
+	cordova.exec(successCallback,errorCallback,"echo","getMessage",options);
+}
+
+module.exports=echoExport;
