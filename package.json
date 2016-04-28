@@ -1,0 +1,19 @@
+{
+  "name": "cordova-example-plugin",
+  "version": "1.0.0",
+  "description": "example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaoyao1992/cordova-example-plugin.git"
+  },
+  "author": "yaoyao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaoyao1992/cordova-example-plugin/issues"
+  },
+  "homepage": "https://github.com/yaoyao1992/cordova-example-plugin#readme"
+}
