@@ -1,1 +1,1 @@
-# yaoyaochecknow
+# cordova-example-plugin
