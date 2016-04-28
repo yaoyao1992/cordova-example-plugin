@@ -11,8 +11,8 @@ cordova plugin add https://github.com/yaoyao1992/cordova-example-plugin.git --sa
 
 *	/www
 *	/src
-*		/android
-*		/ios
+*	&nbsp; /android
+*	&nbsp; /ios
 *	plugin.xml
 
 使用方法
