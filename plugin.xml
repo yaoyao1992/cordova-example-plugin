@@ -9,6 +9,13 @@
   
   <repo>https://github.com/yaoyao1992/cordova-example-plugin</repo>
   <issue>https://github.com/yaoyao1992/cordova-example-plugin/issues</issue>
+  
+
+  <engines>
+    <engine
+      name="cordova"
+      version=">=5.0.0" />
+  </engines>
 
 
   <js-module src="www/echo.js" name="echo">
@@ -17,11 +24,13 @@
 
 
   <platform name="android">
-	<config-file target="config.xml" parent="/*">
-	    <feature name="Echo">
-	        <param name="android-package" value="org.apache.cordova.plugin.Echo"/>
-	    </feature>
-	</config-file>
+    <config-file target="config.xml" parent="/*">
+        <feature name="Echo">
+            <param name="android-package" value="org.apache.cordova.plugin.Echo"/>
+        </feature>
+    </config-file>
+
+      <source-file src="src/android/Echo.java" target-dir="src/org/apache/cordova/echo" />
   </platform>
 
   <platform name="ios">
@@ -30,6 +39,9 @@
                 <param name="ios-package" value="Echo" />
             </feature>
         </config-file>
+
+         <header-file src="src/ios/Echo.h" />
+         <source-file src="src/ios/Echo.m" />
   </platform>
 
 
